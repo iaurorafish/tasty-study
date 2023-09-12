@@ -47,18 +47,26 @@
 
 4. 运行测试类的ShopServiceTest的testSaveShop2Redis方法、testSaveShop2RedisGeo方法，将商户数据缓存到Redis中
 
-5. 在Redis中创建一个Stream类型的消息队列，名为stream.order
+5. 在Redis中创建两个String类型的秒杀券库存数组
+
+   ```
+   set seckill:stock:2 200
+   set seckill:stock:3 200
+   ```
+
+6. 在Redis中创建一个Stream类型的消息队列，名为stream.order
 
    ```
     xgroup create stream.order g1 0 MKSTREAM
    ```
 
-6. 启动项目
+7. 启动项目
 
-7. 在浏览器访问：http://localhost:8081/shop-type/list ，如果可以看到数据则证明运行没有问题
+8. 在浏览器访问：http://localhost:8081/shop-type/list ，如果可以看到数据则证明运行没有问题
 
 ## 运行前端项目
 
+1. 将nginx文件夹复制到D盘目录下，或者安装到喜欢的地方，然后修改工具包utils下的SystemConstants类中的MAGE_UPLOAD_DIR属性值
 1. 在nginx文件夹所在目录下打开一个CMD窗口，输入命令
 
 ```

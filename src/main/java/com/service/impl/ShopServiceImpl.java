@@ -12,7 +12,6 @@ import com.mapper.ShopMapper;
 import com.service.IShopService;
 import com.utils.CacheClient;
 import com.utils.RedisData;
-import com.utils.SystemConstants;
 import jodd.util.StringUtil;
 import org.springframework.data.geo.Distance;
 import org.springframework.data.geo.GeoResult;
@@ -20,7 +19,6 @@ import org.springframework.data.geo.GeoResults;
 import org.springframework.data.redis.connection.RedisGeoCommands;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.domain.geo.GeoReference;
-import org.springframework.data.redis.domain.geo.Metrics;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -3,7 +3,6 @@ package com.controller;
 import com.dto.LoginFormDTO;
 import com.dto.Result;
 import com.dto.UserDTO;
-import com.entity.User;
 import com.service.IUserService;
 import com.utils.UserHolder;
 import org.springframework.web.bind.annotation.*;

@@ -3,7 +3,6 @@ package com.controller;
 import com.dto.Result;
 import com.entity.Blog;
 import com.service.IBlogService;
-import com.utils.UserHolder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

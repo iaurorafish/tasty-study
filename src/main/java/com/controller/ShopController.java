@@ -1,15 +1,11 @@
 package com.controller;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.dto.Result;
 import com.entity.Shop;
 import com.service.IShopService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
-import java.util.List;
-
-import static com.utils.SystemConstants.DEFAULT_PAGE_SIZE;
 
 @RestController
 @RequestMapping("/shop")
