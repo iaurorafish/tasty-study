@@ -16,7 +16,7 @@
 
 本项目并没有实现消费点评类应用的所有常见功能，即不是一个可以直接上线使用的成熟应用。仅仅实现了以下功能：
 
-![](E:\MyProgramming\TastyStudy\功能实现.png)
+![](https://github.com/iaurorafish/tasty-study/blob/master/%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0.png)
 
 注：图片来自《黑马程序员Redis入门到实战教程》课程的PPT
 
