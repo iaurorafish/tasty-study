@@ -43,6 +43,9 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
     @Resource
     private RedissonClient redissonClient;
 
+    private IVoucherOrderService proxy;
+
+
     private static final DefaultRedisScript<Long> SECKILL_SCRIPT;
 
     static {
@@ -144,8 +147,6 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             lock.unlock();
         }
     }
-
-    private IVoucherOrderService proxy;
 
     @Override
     public Result addSeckillVoucherOrder(Long voucherId) {
